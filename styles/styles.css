@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Red Hat Text;
+    src: url("../fonts/RedHatText-Regular.ttf");
+}
+@font-face {
+    font-family: Magra;
+    src: url("../fonts/Magra-Regular.ttf");
+}
+
+body {
+    font-family: Red Hat Text, sans-serif;
+}
+
+.header {
+    background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Добавляем тень (горизонтальное смещение, вертикальное смещение, размытие, цвет) */
+    padding: 25px 0 25px 0;
+}
+
+.container {
+
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+.logo {
+    margin-left: 120px;
+}
+.menu {
+    margin-left: 296px;
+
+}
+
+.logo-text {
+    margin-left: 6px;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+.menu-item {
+    margin-right: 42px;
+
+}
+.menu-item a {
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid white;
+}
+
+.button-Menu {
+
+    background-color: #0D606F;
+    width: 103px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+
+.button-Menu-Text {
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px;
+    background: #0D606F;
+    border: 0;
+    border-radius: 10px;
+    width: 103px;
+    background: #0D606F;
+    margin-left: 196px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: background-color .5s;
+}
+
+.button-Menu-Text:hover {
+    cursor: pointer;
+    background: #575757;
+}
