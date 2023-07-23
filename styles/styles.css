@@ -8,8 +8,34 @@
     src: url("../fonts/RedHatText-Regular.ttf");
 }
 @font-face {
+
+    font-family: Red Hat Text-Semibold;
+    src: url("../fonts/RedHatText-Semibold.ttf");
+    font-weight: 500;
+}
+@font-face {
     font-family: Magra;
     src: url("../fonts/Magra-Regular.ttf");
+}
+@font-face {
+    font-family: Magra-Bold;
+    src: url("../fonts/Magra-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: Aleo;
+    src: url("../fonts/Aleo-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: Aleo-italic;
+    src: url("../fonts/Aleo-Bolditalic.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: Aleo-italic;
+    src: url("../fonts/Aleo-italic.ttf");
+    font-weight: normal;
 }
 
 body {
@@ -47,7 +73,8 @@ body {
     margin-left: 6px;
     color: #FFF;
     font-size: 32px;
-    font-weight: 600;
+    font-family: Magra-Bold, sans-serif;
+    font-weight: bold;
 }
 
 .menu ul {
@@ -55,7 +82,9 @@ body {
     display: flex;
 }
 .menu-item {
+    font-family: Red Hat Text-Semibold, sans-serif;
     margin-right: 42px;
+    font-weight: 500;
 
 }
 .menu-item a {
@@ -90,15 +119,91 @@ body {
     border: 0;
     border-radius: 10px;
     width: 103px;
-    background: #0D606F;
     margin-left: 196px;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     transition: background-color .5s;
 }
 
 .button-Menu-Text:hover {
     cursor: pointer;
     background: #575757;
+}
+
+.rectangle {
+    position: absolute;
+    left: 120px;
+    top: 416px;
+    width: 892px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.70);
+}
+
+.button-in-placeholder {
+    font-family: Red Hat Text-Semibold, sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 24px;
+    padding: 10px;
+    background: #0D606F;
+    border: 0;
+    border-radius: 10px;
+    width: 228px;
+    height: 59px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color .5s;
+    position: absolute;
+    left: 766px;
+    top: 434px;
+}
+
+.button-in-placeholder:hover {
+    cursor: pointer;
+    background: #575757;
+}
+
+.wallpaper12 {
+    background: url("../images/wallpaper12sector.jpg") no-repeat;
+    background-size: cover;
+    height: 765px;
+}
+
+.main-title {
+    color: #FFF;
+    font-family: Aleo, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: normal;
+}
+.main-info {
+    max-width: 892px;
+    padding-left: 120px;
+    margin-top: 32px
+}
+.main-text {
+    position: absolute;
+    left: 120px;
+    top: 346px;
+    color: #FFF;
+    font-family: Aleo-italic, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: normal;
+}
+.text-in-placeholder {
+    position: absolute;
+    left: 161px;
+    top: 448px;
+    color: #F2785C;
+    font-family: Aleo-italic, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: normal;
 }
