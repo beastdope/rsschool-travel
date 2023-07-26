@@ -7,31 +7,43 @@
     font-family: Red Hat Text;
     src: url("../fonts/RedHatText-Regular.ttf");
 }
+
+@font-face {
+    font-family: Aleo;
+    src: url("../fonts/Aleo-Regular.ttf");
+    font-weight: normal;
+}
+
 @font-face {
 
     font-family: Red Hat Text-Semibold;
     src: url("../fonts/RedHatText-Semibold.ttf");
     font-weight: 500;
 }
+
 @font-face {
     font-family: Magra;
     src: url("../fonts/Magra-Regular.ttf");
 }
+
 @font-face {
     font-family: Magra-Bold;
     src: url("../fonts/Magra-Bold.ttf");
     font-weight: bold;
 }
+
 @font-face {
     font-family: Aleo;
     src: url("../fonts/Aleo-Bold.ttf");
     font-weight: bold;
 }
+
 @font-face {
     font-family: Aleo-italic;
     src: url("../fonts/Aleo-Bolditalic.ttf");
     font-weight: bold;
 }
+
 @font-face {
     font-family: Aleo-italic;
     src: url("../fonts/Aleo-italic.ttf");
@@ -61,9 +73,11 @@ body {
 .logo img {
     vertical-align: bottom;
 }
+
 .logo {
     margin-left: 120px;
 }
+
 .menu {
     margin-left: 296px;
 
@@ -81,12 +95,14 @@ body {
     list-style: none;
     display: flex;
 }
+
 .menu-item {
     font-family: Red Hat Text-Semibold, sans-serif;
     margin-right: 42px;
     font-weight: 500;
 
 }
+
 .menu-item a {
     color: #FFF;
     font-size: 16px;
@@ -171,6 +187,7 @@ body {
     background: url("../images/wallpaper12sector.jpg") no-repeat;
     background-size: cover;
     height: 765px;
+    margin-bottom: 80px;
 }
 
 .main-title {
@@ -180,11 +197,13 @@ body {
     font-weight: bold;
     line-height: normal;
 }
+
 .main-info {
     max-width: 892px;
     padding-left: 120px;
     margin-top: 32px
 }
+
 .main-text {
     position: absolute;
     left: 120px;
@@ -196,6 +215,7 @@ body {
     font-weight: bold;
     line-height: normal;
 }
+
 .text-in-placeholder {
     position: absolute;
     left: 161px;
@@ -206,4 +226,63 @@ body {
     font-style: italic;
     font-weight: normal;
     line-height: normal;
+}
+
+.steps-container {
+    width: 100%; /* Занимаем всю доступную ширину */
+    max-width: 1177px;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.steps-text {
+    color: #F2785C;
+    font-size: 40px;
+    font-family: Red Hat Text;
+    font-weight: normal;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 0;
+}
+
+.icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.icon-and-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-under-icon {
+    margin-top: 30px;
+    color: #0D606F;
+    font-size: 20px;
+    font-family: Aleo;
+    font-weight: normal;
+    word-wrap: break-word;
+    text-align: center;
+
 }
