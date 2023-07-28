@@ -6,6 +6,7 @@
 @font-face {
     font-family: Red Hat Text;
     src: url("../fonts/RedHatText-Regular.ttf");
+    font-weight: normal;
 }
 
 @font-face {
@@ -52,6 +53,8 @@
 
 body {
     font-family: Red Hat Text, sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header {
@@ -79,7 +82,7 @@ body {
 }
 
 .menu {
-    margin-left: 296px;
+    margin-left: 158px;
 
 }
 
@@ -95,8 +98,12 @@ body {
     list-style: none;
     display: flex;
 }
-
+.menu {
+    height: auto;
+    width: auto;
+}
 .menu-item {
+
     font-family: Red Hat Text-Semibold, sans-serif;
     margin-right: 42px;
     font-weight: 500;
@@ -135,7 +142,7 @@ body {
     border: 0;
     border-radius: 10px;
     width: 103px;
-    margin-left: 196px;
+    margin-left: 154px;
     box-sizing: border-box;
     text-align: center;
     box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -149,7 +156,6 @@ body {
 
 .rectangle {
     position: absolute;
-    left: 120px;
     top: 416px;
     width: 892px;
     height: 95px;
@@ -174,8 +180,8 @@ body {
     box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     transition: background-color .5s;
     position: absolute;
-    left: 766px;
     top: 434px;
+    margin-left: 646px;
 }
 
 .button-in-placeholder:hover {
@@ -200,13 +206,11 @@ body {
 
 .main-info {
     max-width: 892px;
-    padding-left: 120px;
     margin-top: 32px
 }
 
 .main-text {
     position: absolute;
-    left: 120px;
     top: 346px;
     color: #FFF;
     font-family: Aleo-italic, sans-serif;
@@ -218,7 +222,7 @@ body {
 
 .text-in-placeholder {
     position: absolute;
-    left: 161px;
+    margin-left: 41px;
     top: 448px;
     color: #F2785C;
     font-family: Aleo-italic, sans-serif;
@@ -239,17 +243,12 @@ body {
     gap: 30px;
     margin: 0 auto;
 }
-
-.steps-text {
-    color: #F2785C;
-    font-size: 40px;
-    font-family: Red Hat Text;
-    font-weight: normal;
-    word-wrap: break-word;
-    text-align: center;
-    margin: 0;
+.main {
+    margin-left: 120px;
 }
-
+.steps {
+    margin-bottom: 97px;
+}
 .icon-container {
     width: 100%;
     display: flex;
@@ -280,9 +279,62 @@ body {
     margin-top: 30px;
     color: #0D606F;
     font-size: 20px;
-    font-family: Aleo;
+    font-family: Aleo,sans-serif;
     font-weight: normal;
     word-wrap: break-word;
     text-align: center;
+
+}
+
+.second-header{
+    color: #F2785C;
+    font-size: 40px;
+    font-family: Red Hat Text-Semibold,sans-serif;
+    font-weight: normal;
+    word-wrap: break-word;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+h2 {
+    color: #F2785C;
+    font-size: 40px;
+    font-family: Red Hat Text-Semibold,sans-serif;
+    font-weight: normal;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 0;
+}
+
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+.carousel-cell {
+    width: 800px;
+    height: 800px;
+    margin-right: 60px; /* Небольшое расстояние между слайдами (можете изменить по желанию) */
+
+}
+.image{
+    position: relative;
+    border-radius: 16px; /* Добавляем круглые углы для контейнера с изображением */
+    overflow: hidden; /* Скрываем лишнюю часть изображения, которая выходит за контейнер */
+}
+
+.city-caption {
+    width: 108px;
+    height: 42px;
+    color: #FFFF;
+    font-family: Red Hat Text-Semibold, sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 44px;
+    left: 16px;
+    border-radius: 5px;
 
 }
