@@ -264,9 +264,23 @@ body {
     justify-content: center;
     align-items: center;
 }
+.icon-and-text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .icon {
-
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon2 {
+    margin-left: 37px;
     width: 100px;
     height: 100px;
     display: flex;
@@ -276,6 +290,17 @@ body {
 }
 
 .text-under-icon {
+    margin-top: 30px;
+    color: #0D606F;
+    font-size: 20px;
+    font-family: Aleo,sans-serif;
+    font-weight: normal;
+    word-wrap: break-word;
+    text-align: center;
+
+}
+.text-under-icon2 {
+    margin-left: 37px;
     margin-top: 30px;
     color: #0D606F;
     font-size: 20px;
