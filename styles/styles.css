@@ -59,7 +59,7 @@ body {
 
 .header {
     background-color: rgba(242, 120, 92, 0.7);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Добавляем тень (горизонтальное смещение, вертикальное смещение, размытие, цвет) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 25px 0 25px 0;
 }
 
@@ -233,7 +233,7 @@ body {
 }
 
 .steps-container {
-    width: 100%; /* Занимаем всю доступную ширину */
+    width: 100%;
     max-width: 1177px;
     height: 247px;
     display: flex;
@@ -365,13 +365,12 @@ h2 {
 .carousel-cell {
     width: 800px;
     height: 800px;
-    margin-right: 60px; /* Небольшое расстояние между слайдами (можете изменить по желанию) */
-
+    margin-right: 60px;
 }
 .image{
     position: relative;
-    border-radius: 16px; /* Добавляем круглые углы для контейнера с изображением */
-    overflow: hidden; /* Скрываем лишнюю часть изображения, которая выходит за контейнер */
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .city-caption {
@@ -407,7 +406,7 @@ h2 {
     box-sizing: border-box;
     box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     transition: background-color .5s;
-    margin: 97px auto;
+    margin: 97px auto 96px auto;
     height: 59px;
     width: 228px;
     padding: 10px 10px 10px 32px;
@@ -415,7 +414,7 @@ h2 {
 .text-in-button-arrow {
     height: 32px;
     width: 116px;
-    padding-top: 3px;
+    margin-top: 3px;
 }
 .button-in-placeholder-with-arrow:hover {
     cursor: pointer;
@@ -425,9 +424,8 @@ h2 {
 .travel-stories-background-image {
     background: url("../images/travel-stories-image.jpg") no-repeat;
     background-size: cover;
-    height: 1270px;
+    height: 1331px;
     width: 1445px;
-    margin-bottom: 80px;
     color: rgba(0, 0, 0, 0.5%);
     margin-top: 40px;
 }
@@ -460,16 +458,138 @@ h2 {
 }
 
 .title-of-story1 {
-    font-family: ;
-    font-size: 32px;
-    margin-top: 35px;
+    font-family: Aleo, sans-serif;
+    margin-top: 40px;
     margin-left: 40px;
     margin-bottom: 24px;
+    color: #0D606F;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .story1-text {
     margin-left: 40px;
     margin-right: 120px;
+    color: #0D606F;
+    font-family: Aleo, sans-serif;
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.read-more {
+    color: #0D606F;
+    font-family: Aleo, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.title-of-story2 {
+    font-family: Aleo, sans-serif;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 24px;
+    color: #0D606F;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.story2-text {
+    margin-left: 40px;
+    margin-right: 120px;
+    color: #0D606F;
+    font-family: Aleo, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.title-of-story3 {
+    font-family: Aleo, sans-serif;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 24px;
+    color: #0D606F;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.story3-text {
+    margin-left: 40px;
+    margin-right: 120px;
+    color: #0D606F;
+    font-family: Aleo, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.title-of-story4 {
+    font-family: Aleo, sans-serif;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 24px;
+    color: #0D606F;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.story4-text {
+    margin-left: 40px;
+    margin-right: 120px;
+    color: #0D606F;
+    font-family: Aleo, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+.button-after-stories-container {
+    position: absolute;
+    margin-top: 1080px;
+    margin-left: 606px;
+}
+.button-in-placeholder-with-arrow span {
+    margin-top: 3px;
+}
+.button-in-placeholder-with-arrow {
+    max-width: 228px;
+    max-height: 59px;
+}
+.travel-stories-background-image footer {
+    position: relative;
+    top: 1270px;
+    color: white; /* Пример цвета текста для футера */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon-list  {
+    display: flex;
+    vertical-align: center;
+    list-style-type: none;
+}
+
+.icon-list {
+    padding-right: 20px;
+    margin-top: 14px;
+}
+
+
+.rights-reserved {
+    display: flex;
+    font-family: Red Hat Text, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 590px;
+    margin-top: 20px;
 
 }
 
