@@ -1,6 +1,11 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -53,19 +58,19 @@
 
 body {
     font-family: Red Hat Text, sans-serif;
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 100%;
 }
 
 .header {
+    width: 100%;
     background-color: rgba(242, 120, 92, 0.7);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 25px 0 25px 0;
+    box-shadow: 0 0.225rem 0.45rem rgba(13, 96, 111, 0.7);
+    padding: 1.563rem 0 1.563rem 0;
 }
 
-.container {
-
-    margin: 0 auto;
+.wallpaper12 {
+    display: flex;
+    flex-direction: column;
 }
 
 .header .container {
@@ -78,18 +83,18 @@ body {
 }
 
 .logo {
-    margin-left: 120px;
+    margin-left: 7.5rem;
 }
 
 .menu {
-    margin-left: 158px;
+    margin-left: 9.875rem;
 
 }
 
 .logo-text {
-    margin-left: 6px;
+    margin-left: 0.375rem;
     color: #FFF;
-    font-size: 32px;
+    font-size: 2rem;
     font-family: Magra-Bold, sans-serif;
     font-weight: bold;
 }
@@ -103,49 +108,49 @@ body {
     width: auto;
 }
 .menu-item {
-
+    padding: 0 0 0 2.55rem;
     font-family: Red Hat Text-Semibold, sans-serif;
-    margin-right: 42px;
+    /*margin-right: 2.625rem;*/
     font-weight: 500;
 
 }
 
 .menu-item a {
     color: #FFF;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
 
 }
 
 .menu-item a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 0.125rem solid white;
 }
 
 .button-Menu {
 
     background-color: #0D606F;
-    width: 103px;
+    width: 6.438rem;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 10px;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
 
 }
 
 .button-Menu-Text {
     color: #FFF;
-    font-size: 16px;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 0.625rem;
     background: #0D606F;
     border: 0;
-    border-radius: 10px;
-    width: 103px;
-    margin-left: 154px;
+    border-radius: 0.625rem;
+    width: 6.438rem;
+    margin-left: 15.15rem;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.125rem 0.188rem 0 rgba(13, 96, 111, 0.16), 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
     transition: background-color .5s;
 }
 
@@ -154,34 +159,24 @@ body {
     background: #575757;
 }
 
-.rectangle {
-    position: absolute;
-    top: 416px;
-    width: 892px;
-    height: 95px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.70);
-}
-
 .button-in-placeholder {
+    margin-left: 8.6rem;
     font-family: Red Hat Text-Semibold, sans-serif;
     font-weight: 500;
     color: #FFF;
-    font-size: 24px;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 0.625rem;
     background: #0D606F;
     border: 0;
-    border-radius: 10px;
-    width: 228px;
-    height: 59px;
+    border-radius: 0.625rem;
+    width: 14.25rem;
+    height: 3.688rem;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.125rem 0.188rem 0 rgba(13, 96, 111, 0.16), 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
     transition: background-color .5s;
-    position: absolute;
-    top: 434px;
-    margin-left: 646px;
+    position: relative;
+    top: -2.1rem;
 }
 
 .button-in-placeholder:hover {
@@ -190,43 +185,63 @@ body {
 }
 
 .wallpaper12 {
+    display: flex;
+    align-items: center;
     background: url("../images/wallpaper12sector.jpg") no-repeat;
     background-size: cover;
-    height: 765px;
-    margin-bottom: 80px;
+    width: 100%;
+    height: 46.5rem;
+    max-height: 46.5rem;
+    margin-bottom: 5rem;
 }
 
 .main-title {
+    position: relative;
+    margin-left: -31.8rem;
     color: #FFF;
     font-family: Aleo, sans-serif;
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: bold;
     line-height: normal;
+    max-width: 55rem;
 }
 
 .main-info {
-    max-width: 892px;
-    margin-top: 32px
+
+    max-width: 55.75rem;
+    margin-top: 2rem;
 }
 
 .main-text {
-    position: absolute;
-    top: 346px;
+    position: relative;
+    margin-left: -31.7rem;
+    top: 1.625rem;
     color: #FFF;
     font-family: Aleo-italic, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: italic;
     font-weight: bold;
     line-height: normal;
 }
 
+.rectangle {
+    position: relative;
+    left: 0;
+    top: 4.5rem;
+    margin-left: -31.7rem;
+    width: 55.75rem;
+    height: 5.938rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.70);
+}
 .text-in-placeholder {
-    position: absolute;
-    margin-left: 41px;
-    top: 448px;
+    position: relative;
+    margin-left: -29.563rem;
+    top: 0.7rem;
     color: #F2785C;
     font-family: Aleo-italic, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: normal;
     line-height: normal;
@@ -234,27 +249,27 @@ body {
 
 .steps-container {
     width: 100%;
-    max-width: 1177px;
-    height: 247px;
+    max-width: 73.563rem;
+    height: 15.438rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
     margin: 0 auto;
 }
 .main {
-    margin-left: 120px;
+    margin-left: 7.5rem;
 }
 .steps {
-    margin-bottom: 97px;
+    margin-bottom: 6.063rem;
 }
 .icon-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 6.25rem;
 }
 
 .icon-and-text {
@@ -271,9 +286,9 @@ body {
 }
 
 .icon1 {
-    margin-left: 30px;
-    width: 100px;
-    height: 100px;
+    margin-left: 1.875rem;
+    width: 6.25rem;
+    height: 6.25rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -281,18 +296,18 @@ body {
 }
 .icon3 {
 
-    margin-left: 32px;
-    width: 100px;
-    height: 100px;
+    margin-left: 2rem;
+    width: 6.25rem;
+    height: 6.25rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .icon2 {
-    margin-left: 65px;
-    width: 100px;
-    height: 100px;
+    margin-left: 4.063rem;
+    width: 6.25rem;
+    height: 6.25rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -300,10 +315,10 @@ body {
 }
 
 .text-under-icon1 {
-    margin-left: 17px;
-    margin-top: 30px;
+    margin-left: 1.063rem;
+    margin-top: 1.875rem;
     color: #0D606F;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: Aleo,sans-serif;
     font-weight: normal;
     word-wrap: break-word;
@@ -311,9 +326,9 @@ body {
 
 }
 .text-under-icon3 {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     color: #0D606F;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: Aleo,sans-serif;
     font-weight: normal;
     word-wrap: break-word;
@@ -321,10 +336,10 @@ body {
 
 }
 .text-under-icon2 {
-    margin-left: 57px;
-    margin-top: 30px;
+    margin-left: 3.563rem;
+    margin-top: 1.875rem;
     color: #0D606F;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: Aleo,sans-serif;
     font-weight: normal;
     word-wrap: break-word;
@@ -334,17 +349,17 @@ body {
 
 .second-header{
     color: #F2785C;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: Red Hat Text-Semibold,sans-serif;
     font-weight: normal;
     word-wrap: break-word;
     text-align: center;
-    margin-bottom: 46px;
+    margin-bottom: 2.875rem;
 }
 
 h2 {
     color: #F2785C;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: Red Hat Text-Semibold,sans-serif;
     font-weight: normal;
     word-wrap: break-word;
@@ -355,40 +370,39 @@ h2 {
 .carousel {
     width: 100%;
     margin: 0 auto;
-    border-radius: 16px;
+    border-radius: 1rem;
     background: #FFFFFF;
 }
 
 .carousel-cell {
-    width: 800px;
-    height: 800px;
-    margin-right: 60px;
+    width: 50rem;
+    margin-right: 3.75rem;
 }
 .image{
     position: relative;
-    border-radius: 16px;
+    border-radius: 1rem;
     overflow: hidden;
 }
 
 .city-caption {
-    width: 108px;
-    height: 42px;
+    width: 6.75rem;
+    height: 2.625rem;
     color: #FFFF;
     font-family: Red Hat Text-Semibold, sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: normal;
-    position: absolute;
-    bottom: 44px;
-    left: 16px;
-    border-radius: 5px;
+    position: relative;
+    bottom: 2.75rem;
+    left: 1rem;
+    border-radius: 0.313rem;
 
 }
 
 
 .arrow-right {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.625rem;
 }
 
 .button-in-placeholder-with-arrow {
@@ -397,22 +411,22 @@ h2 {
     font-family: Red Hat Text-Semibold, sans-serif;
     font-weight: normal;
     color: #FFF;
-    font-size: 24px;
+    font-size: 1.5rem;
     display: flex;
     background: #0D606F;
     border: 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.188rem 0 rgba(13, 96, 111, 0.16), 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
     transition: background-color .5s;
-    margin: 97px auto 96px auto;
-    height: 59px;
-    width: 228px;
-    padding: 10px 10px 10px 32px;
+    margin: 6.063rem auto 5rem auto;
+    height: 3.688rem;
+    width: 14.25rem;
+    padding: 0.625rem 0.625rem 0.625rem 2rem;
 }
 .text-in-button-arrow {
-    height: 32px;
-    width: 116px;
-    margin-top: 3px;
+    height: 2rem;
+    width: 7.25rem;
+    margin-top: 0.188rem;
 }
 .button-in-placeholder-with-arrow:hover {
     cursor: pointer;
@@ -422,56 +436,62 @@ h2 {
 .travel-stories-background-image {
     background: url("../images/travel-stories-image.jpg") no-repeat;
     background-size: cover;
-    height: 1331px;
-    width: 1445px;
+    background-position: center;
+    height: 83.188rem;
+    width: 100%;
     color: rgba(0, 0, 0, 0.5%);
-    margin-top: 40px;
+    margin-top: 2.5rem;
+    position: absolute;
+    z-index: 1;
 }
 
 .travel-stories-background-image-blank {
-    height: 1271px;
-    width: 1445px;
-    flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.70);
     position: absolute;
-    top: 2393px;
-    margin-top: 40px;
+    margin-top: 100rem;
+    height: 79.438rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.70);
+    z-index: 2;
 }
 .story-image {
-    border-radius: 16px;
-    margin-left: 120px;
-    box-shadow: 0 4px 4px #0D606F;
+    border-radius: 1rem;
+    margin-left: 7.5rem;
+    box-shadow: 0 0.25rem 0.25rem #0D606F;
 }
 
 .story-image-container {
     list-style-type: none;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 .story-image-container li {
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
 
 .travel-stories-background-image-blank {
+    top: 52.6rem;
+    left: 0;
+    position: absolute;
     display: flex;
 }
 
 .title-of-story1 {
     font-family: Aleo, sans-serif;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 24px;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1.5rem;
     color: #0D606F;
-    font-size: 35px;
+    font-size: 2.188rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .story1-text {
-    margin-left: 40px;
-    margin-right: 120px;
+    width: 48rem;
+    margin-left: 2.5rem;
+    margin-right: 7.5rem;
     color: #0D606F;
     font-family: Aleo, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -481,89 +501,92 @@ h2 {
 .read-more {
     color: #0D606F;
     font-family: Aleo, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-decoration-line: underline;
 }
 
 .title-of-story2 {
     font-family: Aleo, sans-serif;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-bottom: 24px;
+    margin-top: 3.125rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1.5rem;
     color: #0D606F;
-    font-size: 35px;
+    font-size: 2.188rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .story2-text {
-    margin-left: 40px;
-    margin-right: 120px;
+    width: 48rem;
+    margin-left: 2.5rem;
+    margin-right: 7.5rem;
     color: #0D606F;
     font-family: Aleo, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .title-of-story3 {
     font-family: Aleo, sans-serif;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-bottom: 24px;
+    margin-top: 3.125rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1.5rem;
     color: #0D606F;
-    font-size: 35px;
+    font-size: 2.188rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .story3-text {
-    margin-left: 40px;
-    margin-right: 120px;
+    width: 48rem;
+    margin-left: 2.5rem;
+    margin-right: 7.5rem;
     color: #0D606F;
     font-family: Aleo, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .title-of-story4 {
     font-family: Aleo, sans-serif;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-bottom: 24px;
+    margin-top: 3.125rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1.5rem;
     color: #0D606F;
-    font-size: 35px;
+    font-size: 2.188rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .story4-text {
-    margin-left: 40px;
-    margin-right: 120px;
+    width: 48rem;
+    margin-left: 2.5rem;
+    margin-right: 7.5rem;
     color: #0D606F;
     font-family: Aleo, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: normal;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
 
 .button-after-stories-container {
-    position: absolute;
-    margin-top: 1080px;
-    margin-left: 606px;
+    position: relative;
+    margin-top: 67.5rem;
+    margin-left: 15rem;
 }
 .button-in-placeholder-with-arrow span {
-    margin-top: 3px;
+    margin-top: 0.188rem;
 }
 .button-in-placeholder-with-arrow {
-    max-width: 228px;
-    max-height: 59px;
+    max-width: 14.25rem;
+    max-height: 3.688rem;
 }
 .travel-stories-background-image footer {
     position: relative;
-    top: 1270px;
+    top: 79.375rem;
     color: white; /* Пример цвета текста для футера */
     display: flex;
     justify-content: space-between;
@@ -576,44 +599,89 @@ h2 {
 }
 
 .icon-list {
-    padding-right: 20px;
-    margin-top: 14px;
+    padding-right: 1.25rem;
+    margin-top: 0.875rem;
 }
 
 
 .rights-reserved {
+
     display: flex;
     font-family: Red Hat Text, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
-    margin-left: 590px;
-    margin-top: 20px;
+    margin-left: 39.8rem;
+    margin-top: 1.25rem;
+
 
 }
+.button-after-stories-container {
+    position: absolute;
+    left: 25rem;
+    top: 0;
+    display: flex;
 
+}
 .button-after-stories {
     position: absolute;
+    top: 0;
+    left: 0;
     box-sizing: border-box;
     text-align: center;
     font-family: Red Hat Text-Semibold, sans-serif;
     font-weight: normal;
     color: #FFF;
-    font-size: 24px;
+    font-size: 1.5rem;
     display: flex;
     background: #0D606F;
     border: 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.188rem 0 rgba(13, 96, 111, 0.16), 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
     transition: background-color .5s;
-    margin: 97px auto 96px auto;
-    height: 59px;
-    width: 228px;
-    padding: 10px 10px 10px 32px;
+    margin: 6.063rem auto 6rem auto;
+    height: 3.688rem;
+    width: 15rem;
+    padding: 0.625rem 0.625rem 0.625rem 2rem;
 }
 .button-after-stories:hover {
     cursor: pointer;
     background: #575757;
 }
 .button-after-stories span {
-    margin-top: 3px;
+    margin-top: 0.188rem;
+}
+
+
+@media (max-width: 390px) {
+    .body {
+        overflow-x: hidden;
+    }
+    .wallpaper12 {
+        width: 100rem;
+        height: 100rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-position: center;
+
+    }
+    .second-section {
+        width: 100%;
+        height: 100rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-position: center;
+
+    }
+
+    .button-after-stories {
+        display: flex;
+
+        align-items: center;
+
+    }
+
 }
